@@ -16,7 +16,7 @@ app.use(bodyParser.json({ limit: "30mb", extended: true }))
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }))
 app.use(cors())
 
-const CONNECTION_URL = //from mondoDB
+const CONNECTION_URL = 'mongodb+srv://ihposey:shakedown1979@backend-mern-app.9ql5w.mongodb.net/myFirstDatabase?retryWrites=true&w=majority' //from mondoDB
 const PORT = process.env.port || 5000
 
 mongoose.connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true }) //set up to reduce warnings
